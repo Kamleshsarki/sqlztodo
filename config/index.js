@@ -1,3 +1,3 @@
 const Sequelize = require('sequelize')
 
-module.exports = new Sequelize('mysql://root:password@localhost/todo_db')
+module.exports = new Sequelize(process.env.JAWSDB_URL)
